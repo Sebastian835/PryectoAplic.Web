@@ -1,24 +1,38 @@
 .navbar-link {
-    background-color: rgb(241, 240, 240);
-    height: 50px;
-    border-radius: 4px;
-    position: relative; 
+  background-color: rgb(241, 240, 240);
+  height: 50px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
 }
 
 .navbar-link:hover {
-    transform: scale(1.2);  /* zoom */
-    background-color: rgb(98, 237, 98); /* background color change */
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* transitions */
-    z-index: 1;     /*section overlaps*/
+  transform: scale(1.2);
+  background-color: rgb(98, 237, 98);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .navbar-link a {
-    color: black; /*Change the text color to black*/
-    font-family: "Arial", sans-serif; /*Change the font to Arial*/
-    text-decoration: none; /*Remove the underline from the link*/
+  color: black;
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.navbar-link:hover a {
+  color: white;
 }
 
 .navbar-link a:hover {
-    color: white; /*Change Text Color to White on Mouse Hover*/
+  text-decoration: none;
 }
 
+#bannerHome {
+  background-color: black;
+  color: white;
+  height: 80px;
+}
