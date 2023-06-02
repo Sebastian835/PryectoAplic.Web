@@ -1,0 +1,24 @@
+.navbar-link {
+    background-color: rgb(241, 240, 240);
+    height: 50px;
+    border-radius: 4px;
+    position: relative; 
+}
+
+.navbar-link:hover {
+    transform: scale(1.2);  /* zoom */
+    background-color: rgb(98, 237, 98); /* background color change */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* transitions */
+    z-index: 1;     /*section overlaps*/
+}
+
+.navbar-link a {
+    color: black; /*Change the text color to black*/
+    font-family: "Arial", sans-serif; /*Change the font to Arial*/
+    text-decoration: none; /*Remove the underline from the link*/
+}
+
+.navbar-link a:hover {
+    color: white; /*Change Text Color to White on Mouse Hover*/
+}
+
