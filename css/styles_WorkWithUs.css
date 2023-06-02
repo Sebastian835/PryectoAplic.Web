@@ -56,7 +56,21 @@
 
 #CV {
   border-radius: 1rem;
-  width: 115%;
+  width: 120%;
+  height: 115%;
+}
+
+#CV::file-selector-button {
+  padding: 7px 14px;
+  background-color: rgb(59, 187, 59);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#CV::file-selector-button:hover {
+  background-color: rgb(41, 139, 41);
 }
 
 .contact-form h3 {
