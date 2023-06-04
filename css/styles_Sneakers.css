@@ -37,7 +37,10 @@
     padding: 10px;
   }
 
-
+.pagination-container {
+    display: flex;
+    justify-content: center;
+  }
 
 footer {
     position: relative;
