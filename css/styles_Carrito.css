@@ -42,12 +42,12 @@
     justify-content: center;
   }
 
-footer {
-    position: relative;
-    bottom: 0;
+  footer {
+    width: 100%;
     background-color: black;
-    color: white;
-    
+    padding: 7px;
+    position: absolute;
+    margin: 2px;
   }
 
   .mdb {
