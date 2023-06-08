@@ -1,21 +1,21 @@
 /*--HEADER--*/
 .navbar-link {
-    background-color: rgb(241, 240, 240);
+    background-color: rgb(33, 139, 18);
     height: 50px;
-    border-radius: 4px;
+    border-radius: 2px;
     position: relative;
     overflow: hidden;
   }
   
   .navbar-link:hover {
     transform: scale(1.2);
-    background-color: rgb(98, 237, 98);
+    background-color: rgb(233, 233, 233);
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
     z-index: 1;
   }
   
   .navbar-link a {
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: "Arial", sans-serif;
     text-decoration: none;
     display: flex;
@@ -25,7 +25,7 @@
   }
   
   .navbar-link:hover a {
-    color: white;
+    color: rgb(5, 63, 3);
   }
   
   .navbar-link a:hover {
@@ -43,16 +43,56 @@
     color: darkgreen;
   }
   .paragraphs{
-    background: rgb(241, 240, 240);
-    padding: 20px;
+    background: rgb(239, 248, 240);
+    padding: 10px;
+    padding-top: 20px;
     margin: 10px;
     border-radius: 4px;
-    
   }
+  .button_slide {
+    font-family: "Arial", sans-serif;
+    text-decoration: none;
+    padding: 18px 36px;
+    display: inline-block;
+    background-color: rgb(33, 139, 18);
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(89, 158, 104);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  a{
+    font-size: 14px;
+    color: white;
+  }
+  .slide_left:hover {
+    box-shadow: inset 0 0 0 50px rgb(208, 236, 214);
+  }
+  
+#CV {
+  border-radius: 1rem;
+  width: 120%;
+  height: 115%;
+}
+
+#CV::file-selector-button {
+  padding: 7px 14px;
+  background-color: rgb(59, 187, 59);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#CV::file-selector-button:hover {
+  background-color: rgb(41, 139, 41);
+}
+ 
   /*--FOOTER--*/
-  #bannerHome {
+  footer {
     background-color: black;
     color: white;
     height: 80px;
   }
+
   
