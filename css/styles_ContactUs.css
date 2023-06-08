@@ -108,8 +108,11 @@
 }
 
 /*--FOOTER--*/
-#bannerHome {
-  background-color: black;
-  color: white;
-  height: 80px;
+footer {
+  background-color: rgb(0, 0, 0);
+  padding: 7px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
