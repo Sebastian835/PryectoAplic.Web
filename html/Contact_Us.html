@@ -15,151 +15,213 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-shop me-2"></i> <strong>GEAR SHOP</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+                <div class="input-group">
+                    <span class="border-warning input-group-text bg-warning text-white"><i
+                            class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control border-warning" style="color:#7a7a7a">
+                    <button class="btn btn-warning text-white">Search</button>
+                </div>
+            </div>
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="ms-auto d-none d-lg-block">
+                    <div class="input-group">
+                        <span class="border-warning input-group-text bg-warning text-white"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control border-warning" style="color:#7a7a7a">
+                        <button class="btn btn-warning text-white">Search</button>
+                    </div>
+                </div>
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase active" aria-current="page" href="#">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#">About</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-cart-shopping me-1"></i>
+                            Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase" href="#"><i class="fa-solid fa-circle-user me-1"></i>
+                            Account</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--BODY-->
+    <br>
     <div class="container">
-        <!--HEADER-->
-        <header id="headerHome" class="row img-fluid tex-center justify-content-around p-3">
-            <a href="home.html"><img src="../img/StockXLogo.svg.png" width="200px" height="40px" /></a>
-        </header>
-        <section id="navbar" class="row p-2 text-center">
-            <div class="col-3 navbar-link d-flex align-items-center justify-content-center">
-                <a href="home.html" class="font-weight-light link-unstyled">Home</a>
-            </div>
-            <div class="col-3 navbar-link d-flex align-items-center justify-content-center">
-                <a href="Sneakers.html" class="font-weight-light link-unstyled">Sneakers</a>
-            </div>
-            <div class="col-3 navbar-link d-flex align-items-center justify-content-center">
-                <a href="aboutus.html" class="font-weight-light link-unstyled">About Us</a>
-            </div>
-            <div class="col-3 navbar-link d-flex align-items-center justify-content-center">
-                <a href="Contact_Us.html" class="font-weight-light link-unstyled">Contact Us</a>
-            </div>
-        </section>
+        <div class="contact__wrapper shadow-lg mt-n9">
+            <div class="row no-gutters">
+                <div class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 order-lg-2">
+                    <h3 class="color--white mb-5">Get in Touch</h3>
 
-
-        <!--BODY-->
-        <div class="container contact-form">
-            <form method="post" id="contact">
-                <h3>Drop Us a Message</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value=""
-                                required />
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="txtEmail" class="form-control" placeholder="Your Email *" value=""
-                                required />
-                        </div>
-                        <div class="form-group">
-                            <input type="number" name="txtPhone" class="form-control" placeholder="Your Phone Number *"
-                                value="" required />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
-                                style="width: 100%; height: 150px;" required></textarea>
-                        </div>
+                    <ul class="contact-info__list list-style--none position-relative z-index-101">
+                        <li class="mb-4 pl-4">
+                            <span class="position-absolute"><i class="fas fa-envelope"></i></span> support@stockX.com
+                        </li>
+                        <li class="mb-4 pl-4">
+                            <span class="position-absolute"><i class="fas fa-phone"></i></span> (021)-241454-545
+                        </li>
+                        <li class="mb-4 pl-4">
+                            <span class="position-absolute"><i class="fas fa-map-marker-alt"></i></span> StcockX Inc.
+                            <br> Quito - Ecuador
+                        </li>
+                    </ul>
+                    <div id="map-container-google-1" class="z-depth-1-half map-container"
+                        style="max-height: 600px; overflow: hidden;">
+                        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" style="border:0; height: 100%; width: 100%;" allowfullscreen></iframe>
                     </div>
                 </div>
-            </form>
-        </div>
-        <div class="container contact-form">
-            <form method="post" id="work">
-                <h3>Work With Us</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value=""
-                                required />
-                        </div>
 
-                        <div class="form-group">
-                            <input type="number" name="txtPhone" class="form-control" placeholder="Your Phone Number *"
-                                value="" required />
-                        </div>
+                <div class="col-lg-7 contact-form__wrapper p-5 order-lg-1">
+                    <form action="#" class="contact-form form-validate" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label class="required-field" for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                </div>
+                            </div>
 
-                        <div class="form-group">
-                            <input type="text" name="txtAddress" class="form-control" placeholder="Your Address *"
-                                value="" required />
-                        </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
 
-                        <div class="form-group">
-                            <h2>Currículum Vítae (CV)</h2>
-                            <input type="file" class="form-control" id="CV" name="cv" accept=".pdf" required>
-                        </div>
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label class="required-field" for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
 
-                        <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Application" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="email" name="txtEmail" class="form-control" placeholder="Your Email *" value=""
-                                required />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtCity" class="form-control" placeholder="Your City *" value=""
-                                required />
-                        </div>
-                        <select name="puesto" class="form-control">
-                            <option value="asociado">Sales Associate</option>
-                            <option value="visual">Visual Merchandiser</option>
-                            <option value="almacen">Warehouse/logistics staff</option>
-                        </select>
+                            <div class="col-sm-6 mb-3">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                </div>
+                            </div>
 
-                    </div>
+                            <div class="col-sm-12 mb-3">
+                                <div class="form-group">
+                                    <label class="required-field" for="message">How can we help?</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4"
+                                        placeholder="Hi there, I would like to....." required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                <input type="submit" name="btnSubmit" class="btnContact" value="Submit" />
+                            </div>
+
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
-
     </div>
-    <!--FOOTER-->
-    <footer class="row align-items-center">
-        <div class="col-3">
-            <a href="home.html"><img src="../img/logonegro2.png" width="100px" height="50px" /></a>
-        </div>
-        <div class="col-6 row justify-content-center">
-            <div class="col text-center mb-2">
-                <!-- Button to open the modal -->
-                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#scrollableModal">
-                    Terms & Conditions
-                </button>
-                <!-- Modal -->
-                <div class="modal fade" id="scrollableModal" tabindex="-1" role="dialog"
-                    aria-labelledby="scrollableModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <!-- Modal content goes here -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <br>
 
-            <div class="col text-center">
-                <!-- Button to open the modal -->
-                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#scrollableModal2">
-                    Privacy Policy
-                </button>
-                <!-- Modal -->
-                <div class="modal fade" id="scrollableModal2" tabindex="-1" role="dialog"
-                    aria-labelledby="scrollableModalLabel2" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <!-- Modal content goes here -->
+
+    <!--FOOTER-->
+    <div class="container my-5">
+        <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold">StockX</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                Los mejores zapatos, las mejores ofertas. StockX: tu destino para encontrar la zapatilla
+                                perfecta.
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Products</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-white">MDBootstrap</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">MDWordPress</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">BrandFlow</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Bootstrap Angular</a>
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold">Useful links</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p>
+                                <a href="#!" class="text-white">Your Account</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Become an Affiliate</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Shipping Rates</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-white">Help</a>
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold">Contact</h6>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i> Quito - Ecuador</p>
+                            <p><i class="fas fa-envelope mr-3"></i> support@stockX.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> (021)-241454-545</p>
                         </div>
                     </div>
                 </div>
+            </section>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2023 Copyright
             </div>
-        </div>
-        <div class="col-3 d-flex justify-content-start">
-            <img src="../img/logo_Adidas.jpg" width="90px" height="74px" />
-            <img src="../img/logo_nike.jpg" width="90px" height="74px" />
-        </div>
-    </footer>
+        </footer>
+    </div>
 
 </body>
 
