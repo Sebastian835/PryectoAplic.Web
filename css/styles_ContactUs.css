@@ -79,6 +79,48 @@
   cursor: pointer;
 }
 
+.circle-button {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgb(9, 124, 9);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.circle-button:hover {
+  background-color: rgb(98, 237, 98);
+}
+
+.circle-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%) translateX(50%);
+  width: 16px;
+  height: 16px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid white;
+  margin-left: auto;
+}
+
+.btn-custom {
+  width: 20%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: rgb(68, 211, 68);
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 1%;
+}
+
 /*--FOOTER--*/
 footer {
   background-color: rgb(0, 0, 0);
@@ -136,22 +178,4 @@ body {
 .shadow-lg,
 .shadow-lg--on-hover:hover {
   box-shadow: 0 1rem 3rem rgba(132, 138, 163, 0.1) !important;
-}
-
-/* NAVBAR */
-a {
-  font-size: 14px;
-  font-weight: 700;
-}
-.superNav {
-  font-size: 13px;
-}
-.form-control {
-  outline: none !important;
-  box-shadow: none !important;
-}
-@media screen and (max-width: 540px) {
-  .centerOnMobile {
-    text-align: center;
-  }
 }
