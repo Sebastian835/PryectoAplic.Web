@@ -17,3 +17,15 @@ $(document).ready(function () {
     });
   });
 });
+
+$(document).ready(function () {
+  // Validación para el campo firstName al enviar el formulario
+  $("form").on("submit", function (e) {
+    var firstName = $("#firstName").val().trim();
+
+    if (firstName === "") {
+      e.preventDefault(); // Evita el envío del formulario
+      alert("Por favor, ingresa tu nombre.");
+    }
+  });
+});
