@@ -3,7 +3,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".circle-button").click(function () {
+  $(".btn-custom-work").click(function () {
     $("#largeFormContainer").fadeOut("fast", function () {
       $("#hiddenFormContainer").fadeIn("slow");
     });

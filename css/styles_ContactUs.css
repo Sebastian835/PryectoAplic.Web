@@ -79,35 +79,22 @@
   cursor: pointer;
 }
 
-.circle-button {
-  position: absolute;
-  top: 50%;
-  right: -25px;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: rgb(9, 124, 9);
-  border-radius: 50%;
+.btn-custom-work {
+  width: 100%;
+  border-radius: 0;
+  padding: 1.5% 0;
+  background: rgb(68, 211, 68);
+  font-weight: 600;
+  color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.circle-button:hover {
-  background-color: rgb(98, 237, 98);
-}
-
-.circle-button::before {
-  content: "";
   position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translateY(-50%) translateX(50%);
-  width: 16px;
-  height: 16px;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 8px solid white;
-  margin-left: auto;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom-work:hover {
+  background-color: rgb(28, 168, 28);
 }
 
 .btn-custom {
@@ -119,6 +106,10 @@
   color: #fff;
   cursor: pointer;
   margin-bottom: 1%;
+}
+
+.btn-custom:hover {
+  background-color: rgb(28, 168, 28);
 }
 
 /*--FOOTER--*/
