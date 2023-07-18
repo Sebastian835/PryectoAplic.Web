@@ -79,6 +79,39 @@
   cursor: pointer;
 }
 
+.btn-custom-work {
+  width: 100%;
+  border-radius: 0;
+  padding: 1.5% 0;
+  background: rgb(68, 211, 68);
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom-work:hover {
+  background-color: rgb(28, 168, 28);
+}
+
+.btn-custom {
+  width: 20%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: rgb(68, 211, 68);
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 1%;
+}
+
+.btn-custom:hover {
+  background-color: rgb(28, 168, 28);
+}
+
 /*--FOOTER--*/
 footer {
   background-color: rgb(0, 0, 0);
@@ -136,22 +169,4 @@ body {
 .shadow-lg,
 .shadow-lg--on-hover:hover {
   box-shadow: 0 1rem 3rem rgba(132, 138, 163, 0.1) !important;
-}
-
-/* NAVBAR */
-a {
-  font-size: 14px;
-  font-weight: 700;
-}
-.superNav {
-  font-size: 13px;
-}
-.form-control {
-  outline: none !important;
-  box-shadow: none !important;
-}
-@media screen and (max-width: 540px) {
-  .centerOnMobile {
-    text-align: center;
-  }
 }
