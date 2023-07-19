@@ -92,7 +92,7 @@ $(function () {
 
       email: {
         required: true,
-        validemail: true,
+        //validemail: true,
       },
       message: {
         required: true,
@@ -103,7 +103,7 @@ $(function () {
       firstName: {
         required: "Enter your name",
       },
-      lname: {
+      lastName: {
         required: "Enter your last name",
       },
       phone: {
@@ -119,7 +119,76 @@ $(function () {
       },
     },
     submitHandler: function (form) {
-      form.submit();
+      $("#exampleModal").modal("show");
+      $("#exampleModal").on("hidden.bs.modal", function () {
+        form.submit();
+      });
+    },
+  });
+});
+
+$(function () {
+  $("form[name='work']").validate({
+    rules: {
+      txtName: {
+        required: true,
+        minlength: 3,
+        maxlength: 50,
+        lettersonly: true,
+      },
+      txtPhone: {
+        required: true,
+        minlength: 10,
+        maxlength: 10,
+        startsWith09: true,
+      },
+      txtEmail: {
+        required: true,
+        //validemail: true,
+      },
+      txtCity: {
+        required: true,
+        minlength: 3,
+        maxlength: 50,
+        lettersonly: true,
+      },
+      txtAddress: {
+        required: true,
+        minlength: 3,
+        maxlength: 50,
+      },
+      cv: {
+        required: true,
+      },
+    },
+    // Mensajes especificos de error de validacion
+    messages: {
+      firstName: {
+        required: "Enter your name",
+      },
+      txtPhone: {
+        required: "Please enter your mobile number",
+        minlength: "Your mobile number must be 10 digits long",
+        maxlength: "Your mobile number must be 10 digits long",
+      },
+      txtEmail: {
+        required: "Please enter an email address",
+      },
+      txtCity: {
+        required: "Enter your City",
+      },
+      txtAddress: {
+        required: "Enter your Address",
+      },
+      cv: {
+        required: "The Curriculum is necessary",
+      },
+    },
+    submitHandler: function (form) {
+      $("#exampleModal").modal("show");
+      $("#exampleModal").on("hidden.bs.modal", function () {
+        form.submit();
+      });
     },
   });
 });
