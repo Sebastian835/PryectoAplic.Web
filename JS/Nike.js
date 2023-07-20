@@ -1,11 +1,10 @@
 
 $(document).ready(function () {
-    // Array de URLs de las imágenes que quieres mostrar
+    // Array de URLs de las imágenes que se quiere mostrar
     var imageUrls = [
         '../img/Nikem1.jpg',
         '../Imagenes/global1.jfif',
         '../Imagenes/global2.jfif',
-        // Agrega más URLs si deseas mostrar más imágenes
     ];
 
     var currentIndex = 0;
@@ -22,7 +21,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function(){
-    // Array de URLs de las imágenes que quieres mostrar
+    // Array de URLs de las imágenes que se quiere mostrar
     var imageUrls = [
         '../img/Nikem2.jpg',
         '../Imagenes/global3.jfif',
@@ -43,7 +42,7 @@ $(document).ready(function(){
     setInterval(changeImage, 3000);
 });
 $(document).ready(function(){
-    // Array de URLs de las imágenes que quieres mostrar
+    // Array de URLs de las imágenes que se quiere mostrar
     var imageUrls = [
         '../img/Nikem3.jpg',
         '../Imagenes/global5.jfif',
@@ -64,7 +63,7 @@ $(document).ready(function(){
     setInterval(changeImage, 3000);
 });
 $(document).ready(function(){
-    // Array de URLs de las imágenes que quieres mostrar
+    // Array de URLs de las imágenes que se quiere mostrar
     var imageUrls = [
         '../img/Nikem4.jpg',
         '../Imagenes/global7.jfif',
@@ -85,7 +84,7 @@ $(document).ready(function(){
     setInterval(changeImage, 3000);
 });
 $(document).ready(function(){
-    // Array de URLs de las imágenes que quieres mostrar
+    // Array de URLs de las imágenes que se quiere mostrar
     var imageUrls = [
         '../img/Nikem5.jpg',
         '../Imagenes/global9.jfif',
@@ -106,7 +105,7 @@ $(document).ready(function(){
     setInterval(changeImage, 3000);
 });
 $(document).ready(function(){
-    // Array de URLs de las imágenes que quieres mostrar
+    // Array de URLs de las imágenes que se quiere mostrar
     var imageUrls = [
         '../img/Nikem6.jpg',
         '../Imagenes/global11.jfif',
@@ -127,7 +126,7 @@ $(document).ready(function(){
     setInterval(changeImage, 3000);
 });
 $(document).ready(function(){
-    // Array de URLs de las imágenes que quieres mostrar
+    // Array de URLs de las imágenes que se quiere mostrar
     var imageUrls = [
         '../img/Nikeh1.jpg',
         '../Imagenes/global13.jpg',
@@ -148,7 +147,7 @@ $(document).ready(function(){
     setInterval(changeImage, 3000);
 });
 $(document).ready(function(){
-    // Array de URLs de las imágenes que quieres mostrar
+    // Array de URLs de las imágenes que se quiere mostrar
     var imageUrls = [
         '../img/Nikeh2.jpg',
         '../Imagenes/global15.jpg',
@@ -169,7 +168,7 @@ $(document).ready(function(){
     setInterval(changeImage, 3000);
 });
 $(document).ready(function(){
-    // Array de URLs de las imágenes que quieres mostrar
+    // Array de URLs de las imágenes que se quiere mostrar
     var imageUrls = [
         '../img/Nikeh3.jpg',
         '../Imagenes/global17.jpg',
@@ -190,7 +189,7 @@ $(document).ready(function(){
     setInterval(changeImage, 3000);
 });
 $(document).ready(function(){
-    // Array de URLs de las imágenes que quieres mostrar
+    // Array de URLs de las imágenes que se quiere mostrar
     var imageUrls = [
         '../img/Nikeh4.jpg',
         '../Imagenes/global19.jpg',
@@ -211,7 +210,7 @@ $(document).ready(function(){
     setInterval(changeImage, 3000);
 });
 $(document).ready(function(){
-    // Array de URLs de las imágenes que quieres mostrar
+    // Array de URLs de las imágenes que se quiere mostrar
     var imageUrls = [
         '../img/Nikeh5.jpg',
         '../Imagenes/global21.jpg',
@@ -232,7 +231,7 @@ $(document).ready(function(){
     setInterval(changeImage, 3000);
 });
 $(document).ready(function(){
-    // Array de URLs de las imágenes que quieres mostrar
+    // Array de URLs de las imágenes que se quiere mostrar
     var imageUrls = [
         '../img/Nikeh6.jpg',
         '../Imagenes/global23.jpg',
@@ -251,22 +250,4 @@ $(document).ready(function(){
 
     // Cambiar la imagen cada 3 segundos
     setInterval(changeImage, 3000);
-});
-$(document).ready(function(){
-    // Cuando el ratón entra en el contenedor
-    $(".card-text").hover(function(){
-        // Agrandamos la imagen con un tamaño mayor al original
-        $(".imag4").css({
-            'width': '175px',
-            'height': '225px'
-        });
-    });
-
-    // Cuando el ratón sale del contenedor (volvemos al tamaño original)
-    $(".card-text").mouseleave(function(){
-        $(".imag4").css({
-            'width': '150px',
-            'height': '170px'
-        });
-    });
 });
