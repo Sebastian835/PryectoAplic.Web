@@ -20,72 +20,32 @@
     <script src="../JS/Nike.js"></script>
 
     <style>
-        .navbar-link {
-            background-color: rgb(241, 240, 240);
-            height: 50px;
-            border-radius: 4px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .navbar-link:hover {
-            transform: scale(1.2);
-            background-color: rgb(98, 237, 98);
-            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-            z-index: 1;
-        }
-
-        .navbar-link a {
-            color: black;
-            font-family: "Arial", sans-serif;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
-
-        .navbar-link:hover a {
-            color: white;
-        }
-
-        .navbar-link a:hover {
-            text-decoration: none;
-        }
-
-        .header {
-            color: #36a0ff;
-            font-size: 27px;
-            padding: 10px;
-        }
-
-        .pagination-container {
-            display: flex;
-            justify-content: center;
-        }
-
-        footer {
-            width: 101%;
-            background-color: black;
-            padding: 7px;
-            position: absolute;
-        }
-
-        .card {
-            flex: 0 0 calc(33.33% - 20px);
-            margin: 10px;
-            text-align: justify;
-        }
-
-        .mdb {
-            float: right;
-        }
-
         #palabra {
             color: rgb(13, 73, 21);
             font-size: 30px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             padding: 10px;
+        }
+
+        #lala {
+            background-color: rgb(12, 90, 12);
+            display: flex;
+            /* Centrar horizontalmente */
+            align-items: center;
+            /* Centrar verticalmente */
+            height: 50px;
+            /* Altura del botón */
+            width: 160px;
+            /* Anchura del botón */
+            border-radius: 2px rgb(3, 83, 3);
+            /* Bordes redondeados para un mejor aspecto */
+        }
+
+        #lala a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            /* Tamaño del texto */
         }
     </style>
 </head>
@@ -339,10 +299,12 @@
 
         </div>
         <br><br>
-        <div class="row justify-content-center">
-            <div class="button_slide slide_left  col-2"><a href="aboutus.html" class="text-align-center m-4">About
-                    Us</a></div>
-        </div>
+        <center>
+            <div id="lala" class="btn btn-success col-2"
+                style="background-color: lightgreen; color: white; text-decoration: none;">
+                <a href="aboutus.html" class="text-align-center m-5" style="color: white; text-decoration: none;">About
+                    Us</a>
+        </center>
         <br><br>
     </div>
 </body>
