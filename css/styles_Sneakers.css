@@ -1,60 +1,76 @@
 .navbar-link {
-    background-color: rgb(241, 240, 240);
-    height: 50px;
-    border-radius: 4px;
-    position: relative;
-    overflow: hidden;
-  }
+  background-color: rgb(241, 240, 240);
+  height: 50px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
   
-  .navbar-link:hover {
-    transform: scale(1.2);
-    background-color: rgb(98, 237, 98);
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    z-index: 1;
-  }
-  
-  .navbar-link a {
-    color: black;
-    font-family: "Arial", sans-serif;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  .navbar-link:hover a {
-    color: white;
-  }
-  
-  .navbar-link a:hover {
-    text-decoration: none;
-  }
-  
-  .header {
-    color: #36a0ff;
-    font-size: 27px;
-    padding: 10px;
-  }
+}
+
+.navbar-link:hover {
+  transform: scale(1.2);
+  background-color: rgb(98, 237, 98);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.navbar-link a {
+  color: black;
+  font-family: "Arial", sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.navbar-link:hover a {
+  color: white;
+}
+
+.navbar-link a:hover {
+  text-decoration: none;
+}
+
+.header {
+  color: #36a0ff;
+  font-size: 27px;
+  padding: 10px;
+}
 
 .pagination-container {
-    display: flex;
-    justify-content: center;
-  }
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+}
 
-  footer {
-    width: 101%;
-    background-color: black;
-    padding: 7px;
-    position: absolute;
-  }
+footer {
+  background-color: rgb(0, 0, 0);
+  padding: 7px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
 
-  .card {
-    flex: 0 0 calc(33.33% - 20px);
-    margin: 10px;
-  }
+.card {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  border: solid black 4px;
+  border-radius: 10px
+}
 
-  .mdb {
-    float: right;
-  }
+.mdb {
+  float: right;
+}
 
+.card-img-top{
+  border-bottom: solid black;
+}
+
+body{
+  background-image: linear-gradient(to right, #b9ead5, #26c66b);
+  
+}
