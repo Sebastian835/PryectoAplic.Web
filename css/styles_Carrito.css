@@ -44,6 +44,7 @@
 
   footer {
     width: 100%;
+    left: -1px;
     background-color: black;
     padding: 7px;
     position: absolute;
@@ -66,4 +67,19 @@
   height:100%;
   width:100%;
   position:absolute;
+}
+
+body{
+  background-image: linear-gradient(to right, #b9ead5, #26c66b);
+  display: none;
+}
+
+.list-group{
+  border-radius: 3px;
+  border: solid black 3px;
+}
+
+input{
+  border-radius: 3px;
+  border: solid black 3px;
 }

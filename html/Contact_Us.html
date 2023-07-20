@@ -73,33 +73,33 @@
                 </div>
 
                 <div class="col-lg-7 contact-form__wrapper p-5 order-lg-1">
-                    <form method="post" class="contact-form form-validate" id="contacUS">
+                    <form method="post" class="contact-form form-validate" id="contacUS" name="contacUS">
                         <div class="row">
                             <div class="col-sm-6 mb-3">
                                 <div class="form-group">
-                                    <label>First Name</label>
-                                    <input type="text" class="form-control" id="firstName" name="firstName">
+                                    <input type="text" class="form-control" id="firstName" name="firstName"
+                                        placeholder="First Name *">
                                 </div>
                             </div>
 
                             <div class="col-sm-6 mb-3">
                                 <div class="form-group">
-                                    <label>Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" name="lastName">
+                                    <input type="text" class="form-control" id="lastName" name="lastName"
+                                        placeholder="Last Name *">
                                 </div>
                             </div>
 
                             <div class="col-sm-6 mb-3">
                                 <div class="form-group">
-                                    <label>Email</label>
-                                    <input type="email" class="form-control" id="email" name="email">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Email *">
                                 </div>
                             </div>
 
                             <div class="col-sm-6 mb-3">
                                 <div class="form-group">
-                                    <label>Phone Number</label>
-                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                    <input type="number" class="form-control" id="phone" name="phone"
+                                        placeholder="Phone Number *">
                                 </div>
                             </div>
 
@@ -123,7 +123,7 @@
 
     <div class="container" style="background-color: white; border-radius: 10px;" id="hiddenFormContainer">
         <div class="container contact-form">
-            <form method="post" id="work">
+            <form method="post" id="work" name="work">
                 <h3 style="padding-top: 8px;">Work With Us</h3>
                 <div class="row">
                     <div class="col-md-6">
@@ -143,8 +143,8 @@
                         </div>
 
                         <div class="form-group">
-                            <h3>Currículum Vítae (CV)</h3>
-                            <input type="file" class="form-control" id="CV" name="cv" accept=".pdf,.doc,.docx" required>
+                            <h5>Currículum Vítae (CV)</h5>
+                            <input type="file" class="form-control" id="CV" name="cv" accept=".pdf" required>
                         </div>
                         <div class="form-group">
                             <input type="submit" name="btnSubmit" class="btnContact" value="Send Application" />
@@ -173,7 +173,6 @@
             </form>
         </div>
     </div>
-
 
 
     <!--FOOTER-->
@@ -237,7 +236,16 @@
         </footer>
     </div>
 
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Successfully</h5>
+                </div>
+                <div class="modal-body">The data has been sent successfully</div>
+            </div>
+        </div>
+    </div>
 
 
 </body>
@@ -249,6 +257,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
