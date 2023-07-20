@@ -14,33 +14,9 @@
     <link rel="stylesheet" href="../css/styles_ContactUs.css" />
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="shortcut icon" href="../img/ico_StockX.ico">
+    <link rel="stylesheet" href="../css/style_hom.css">
 
 </head>
-
-<style>
-    @media (min-width: 992px) {
-        .card {
-            width: 18rem;
-        }
-    }
-
-    /* Estilos para ajustar el carrusel a 888x550 píxeles */
-    .carousel-inner img {
-        max-width: 100%;
-        max-height: 550px;
-        width: auto;
-        height: auto;
-    }
-
-    #Descripcion {
-
-        background: linear-gradient(to right,#195728,#58c96c);
-       
-        padding: 4px;
-
-
-    }
-</style>
 
 <body>
 
@@ -52,11 +28,9 @@
 
     <!-- Cuerpo del sitio -->
     <div class="container mt-5">
+        <!-- Tu barra de navegación -->
 
-
-          <!-- Tu barra de navegación -->
-
-          <section id="navbar" class="row p-2 text-center">
+        <section id="navbar" class="row p-2 text-center">
             <div class="col-3 navbar-link d-flex align-items-center justify-content-center">
                 <a href="home.html" class="font-weight-light link-unstyled">Home</a>
             </div>
@@ -71,10 +45,10 @@
             </div>
         </section>
         <br>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
+        <div class="row justify-content-center ">
+            <div class="col-md-12"> <!-- Eliminamos la clase "col-md-8" para que el carrusel ocupe todo el ancho -->
                 <!-- Carrusel centrado -->
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide full-width-carousel" data-ride="carousel">
                     <!-- Contenido del carrusel -->
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -116,55 +90,9 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
 
-    <!-- Productos destacados centrados -->
-    <div class="container my-5">
-        <h2 class="text-center">Productos Destacados</h2>
-        <section class="row justify-content-center p-2">
-            <!-- Contenido de los productos destacados -->
-            <div class="col-sm-6 col-md-4 col-lg-3 m-3">
-                <div class="card">
-                    <img src="../img/Yeezy.jpg" class="img-fluid card-img-top" style="height: 225px;">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Adidas Yeezy Boost 350 v2</h5>
-                        <p class="card-text">Discover the exclusive offer of the Adidas Yeezy Boost 350 v2 shoes! Get
-                            style, comfort and quality at the best price. Do not miss it!</p>
-                        <div style="text-align: center;">
-                            <a href="shopping cart.html" class="btn btn-success">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 m-3">
-                <div class="card">
-                    <img src="../img/Jordan1Retro.jpg" class="img-fluid card-img-top" style="height: 225px;">
-                    <div class="card-body">
-                        <h5 class="card-title text-center ">Jordan 1 Retro High OG</h5>
-                        <p class="card-text">
-                            Get the iconic Jordan 1 Retro High OG and take your style to the next level. Stand out with
-                            authenticity and elegance.</p>
-                        <div style="text-align: center;">
-                            <a href="shopping cart.html" class="btn btn-success">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 m-3">
-                <div class="card">
-                    <img src="../img/NewBalance.jpg" class="img-fluid card-img-top" style="height: 225px;">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">New Balance 550</h5>
-                        <p class="card-text">
-                            Discover the incomparable comfort and style of the New Balance 550. Look fashionable with
-                            every step!</p>
-                        <div style="text-align: center;">
-                            <a href="shopping cart.html" class="btn btn-success">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
     <!-- Prueba -->
 
     <section id="Descripcion">
@@ -211,6 +139,157 @@
                 <br>
             </div>
         </div>
+    </section>
+
+
+    <!-- Productos destacados centrados -->
+    <div class="container my-5">
+        <h2 class="text-center">Productos Destacados</h2>
+        <section class="row justify-content-center p-2">
+            <!-- Contenido de los productos destacados -->
+            <div class="col-sm-6 col-md-4 col-lg-3 m-3">
+                <div class="card">
+                    <img src="../img/Yeezy.jpg" class="img-fluid card-img-top" style="height: 225px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Adidas Yeezy Boost 350 v2</h5>
+                        <p class="card-text">Discover the exclusive offer of the Adidas Yeezy Boost 350 v2 shoes! Get
+                            style, comfort and quality at the best price. Do not miss it!</p>
+                        <div style="text-align: center;">
+                            <a href="shopping cart.html" class="btn btn-success">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 m-3">
+                <div class="card">
+                    <img src="../img/zapatos/zapato1.jpg" class="img-fluid card-img-top" style="height: 225px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center ">Jordan 1 Retro High OG</h5>
+                        <p class="card-text">
+                            Get the iconic Jordan 1 Retro High OG and take your style to the next level. Stand out with
+                            authenticity and elegance.</p>
+                        <div style="text-align: center;">
+                            <a href="shopping cart.html" class="btn btn-success">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 m-3">
+                <div class="card">
+                    <img src="../img/NewBalance.jpg" class="img-fluid card-img-top" style="height: 225px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">New Balance 550</h5>
+                        <p class="card-text">
+                            Discover the incomparable comfort and style of the New Balance 550. Look fashionable with
+                            every step!</p>
+                        <div style="text-align: center;">
+                            <a href="shopping cart.html" class="btn btn-success">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid back-foto">
+        <div class="container">
+            <h1 class="display-4">Las Mejores Zapatillas del Verano</h1>
+            <div class="container">
+                <div class="row">
+                    <img src="../img/air-max-90-zapatillas-WHvkXZ.png" alt="zapa1" class="col-md-4 img1">
+                    <img src="../img/air-jordan-1-retro-high-og-zapatillas.png" alt="zapa1" class="col-md-4 img1">
+                    <img src="../img/zapatilla-nike-match-supreme-hi.jpg" alt="zapa1" class="col-md-4 img1">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+
+    <section id="targetas_descuento">
+        <h2 class="text-center">Targetas de descuento</h2>
+        <br>
+
+        <div class="main-especiales">
+
+            <div class="productos-especiales color-orange">
+                <img class="especial-imagen" src="../img/zapatos/especialp1.png" alt="puma-premium">
+                <div class="card-informacion">
+                    <h3 class="card-titulo">Puma x Ray </h3>
+                    <div class="card-talles">
+                        <p class="card-titulo">30% descuento</p>
+                        <p class="card-disponible">¡Pocas Unidades Disponibles!</p>
+                        <p class="card-disponible">CÓDIGO:</p>
+                        <div class="especiales-talle">
+                            <p class="talles">2</p>
+                            <p class="talles">3</p>
+                            <p class="talles">1</p>
+                            <p class="talles">4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="productos-especiales color-litegrey">
+                <img class="especial-imagen" src="../img/zapatos/especialn2.png" alt="nike-premium">
+                <div class="card-informacion">
+                    <h3 class="card-titulo">Nike Jordan 1 Hi FlyEase</h3>
+                    <div class="card-talles">
+                        <p class="card-titulo">30% descuento</p>
+                        <p class="card-disponible">¡Pocas Unidades Disponibles!</p>
+                        <p class="card-disponible">CÓDIGO:</p>
+                        <div class="especiales-talle">
+                            <p class="talles">4</p>
+                            <p class="talles">6</p>
+                            <p class="talles">1</p>
+                            <p class="talles">3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="productos-especiales color-grey">
+                <img class="especial-imagen" src="../img/zapatos/rebookdc2.png" alt="reebok-premium">
+                <div class="card-informacion">
+                    <h3 class="card-titulo">Reebok Shaq Attaq Dons</h3>
+                    <div class="card-talles">
+                        <p class="card-titulo">25% descuento</p>
+                        <p class="card-disponible">¡Pocas Unidades Disponibles!</p>
+                        <p class="card-disponible">CÓDIGO:</p>
+                        <div class="especiales-talle">
+                            <p class="talles">2</p>
+                            <p class="talles">8</p>
+                            <p class="talles">6</p>
+                            <p class="talles">1</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="productos-especiales color-liteblue">
+                <img class="especial-imagen" src="../img/zapatos/nike22.png" alt="nike-premium">
+                <div class="card-informacion">
+                    <h3 class="card-titulo">Nike Deldon</h3>
+                    <div class="card-talles">
+                        <p class="card-titulo">50% descuento</p>
+                        <p class="card-disponible">¡Pocas Unidades Disponibles!</p>
+                        <p class="card-disponible">CÓDIGO:</p>
+                        <div class="especiales-talle">
+                            <p class="talles">6</p>
+                            <p class="talles">1</p>
+                            <p class="talles">9</p>
+                            <p class="talles">7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </section>
 
 
@@ -305,8 +384,14 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-o8Ls4kKjjB1vj24oMqq7gAz1PPv2U8K6F0o8w8CZi3A=" crossorigin="anonymous"></script>
+
+
+
     <script>
+
+
         $(document).ready(function () {
+           
             // Cuando el mouse entra en una tarjeta
             $('.card').mouseenter(function () {
                 $(this).css('transform', 'scale(1.1)');
@@ -316,8 +401,45 @@
             $('.card').mouseleave(function () {
                 $(this).css('transform', 'scale(1)');
             });
+
         });
+
+        $(document).ready(function () {
+            // Efecto de agrandar las tarjetas al pasar el cursor
+            $('.productos-especiales').mouseenter(function () {
+                $(this).css('transform', 'scale(1.1)');
+            });
+
+            $('.productos-especiales').mouseleave(function () {
+                $(this).css('transform', 'scale(1)');
+            });
+
+            // Efecto de deslizar hacia arriba y hacia abajo el texto al pasar el cursor
+            $(".card-informacion").hover(
+                function () {
+                    $(this).find(".card-text").slideDown();
+                },
+                function () {
+                    $(this).find(".card-text").slideUp();
+                }
+            );
+        });
+
+        $(document).ready(function () {
+            // Cuando el mouse entra en una tarjeta
+            $('.productos-especiales').mouseenter(function () {
+                $(this).find('.card-informacion').slideDown(); // Mostrar el texto al pasar el cursor
+            });
+
+            // Cuando el mouse sale de una tarjeta
+            $('.productos-especiales').mouseleave(function () {
+                $(this).find('.card-informacion').slideUp(); // Ocultar el texto al quitar el cursor
+            });
+        });
+        
+
     </script>
+
 </body>
 
 </html>
