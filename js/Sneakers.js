@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function () {
     var elementos = document.querySelectorAll("img");
 
@@ -112,4 +115,6 @@ $(document).ready(function () {
         pagina = 3;
     })
 })
+
+
 
