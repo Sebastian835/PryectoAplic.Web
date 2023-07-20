@@ -252,3 +252,21 @@ $(document).ready(function(){
     // Cambiar la imagen cada 3 segundos
     setInterval(changeImage, 3000);
 });
+$(document).ready(function(){
+    // Cuando el ratón entra en el contenedor
+    $(".card-text").hover(function(){
+        // Agrandamos la imagen con un tamaño mayor al original
+        $(".imag4").css({
+            'width': '175px',
+            'height': '225px'
+        });
+    });
+
+    // Cuando el ratón sale del contenedor (volvemos al tamaño original)
+    $(".card-text").mouseleave(function(){
+        $(".imag4").css({
+            'width': '150px',
+            'height': '170px'
+        });
+    });
+});
