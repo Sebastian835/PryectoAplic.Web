@@ -48,7 +48,7 @@
         <div class="row justify-content-center ">
             <div class="col-md-12"> <!-- Eliminamos la clase "col-md-8" para que el carrusel ocupe todo el ancho -->
                 <!-- Carrusel centrado -->
-                <div id="carouselExampleCaptions" class="carousel slide full-width-carousel" data-ride="carousel">
+                <div id= arouselExampleCaptions" class="carousel slide full-width-carousel" data-ride="carousel">
                     <!-- Contenido del carrusel -->
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -424,6 +424,17 @@
             $('.productos-especiales').mouseleave(function () {
                 $(this).find('.card-informacion').slideUp(); // Ocultar el texto al quitar el cursor
             });
+        });
+
+        $(document).ready(function() {
+            $(".img1").hover(
+                function() {
+                    $(this).addClass("hover");
+                },
+                function() {
+                    $(this).removeClass("hover");
+                }
+            );
         });
         
 

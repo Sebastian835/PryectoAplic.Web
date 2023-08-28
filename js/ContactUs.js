@@ -26,7 +26,7 @@ jQuery.validator.addMethod(
     }
 
     var isValid = false;
-    var apiKey = "API"; // 6577a236dc2343b6b2194e83cc637aae
+    var apiKey = "6577a236dc2343b6b2194e83cc637aae"; // 6577a236dc2343b6b2194e83cc637aae
     var url =
       "https://emailvalidation.abstractapi.com/v1/?api_key=" +
       apiKey +
@@ -92,7 +92,7 @@ $(function () {
 
       email: {
         required: true,
-        //validemail: true,
+        validemail: true,
       },
       message: {
         required: true,
@@ -144,7 +144,7 @@ $(function () {
       },
       txtEmail: {
         required: true,
-        //validemail: true,
+        validemail: true,
       },
       txtCity: {
         required: true,
@@ -192,3 +192,5 @@ $(function () {
     },
   });
 });
+
+
